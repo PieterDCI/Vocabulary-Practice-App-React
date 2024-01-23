@@ -2,7 +2,7 @@ function ReverseTrnslMode() {
     return(
         <main>
             <div className="wrapper">
-                <p>rtrnsl</p>
+                <p>Reverse Translation Mode</p>
             </div>
        </main>
     )

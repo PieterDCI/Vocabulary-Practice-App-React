@@ -11,9 +11,9 @@ function Main({ mode }) {
             (mode === 'transl')? <TranslateMode /> :
               (mode === 'rtransl')? <ReverseTrnslMode /> : 
                 <main>
-                      <div className="wrapper">
-                          <p>select pls</p>
-                      </div>
+                    <div className="wrapper" style={{backgroundColor: 'transparent'}}>
+                        <p><i class="icon-arrow-up"></i> Please select one of the options above! <i class="icon-arrow-up"></i></p>
+                    </div>
                 </main>
     )
 }

@@ -2,7 +2,7 @@ function TranslateMode() {
     return(
         <main>
             <div className="wrapper">
-                <p>transl</p>
+                <p>Translation mode</p>
             </div>
        </main>
     )
