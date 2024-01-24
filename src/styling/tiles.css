@@ -1,0 +1,23 @@
+.main-tile {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    background-color: orange;
+    height: 25px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tiles {
+    display: flex;
+    margin-top: 15px;
+}
+
+.tile {
+    background-color: var(--clr-dark1);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
