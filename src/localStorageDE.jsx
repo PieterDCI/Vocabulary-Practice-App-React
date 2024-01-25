@@ -12,11 +12,11 @@ export {addWordDE, wordsDE, getData, saveData};
 // {
 //     users: {pieter: "admin", johndoe: "pass1"},
 //     pieter: [
-//     {wrd:"Tisch",art:"der",pll:"Tische",tsl:"Table",ct1:0,ct2:0},
+//     {wrd:"tisch",art:"der",pll:"tische",tsl:"table",ct1:0,ct2:0},
 //     ],
 //     johndoe: [
-//         {wrd:"Tisch",art:"der",pll:"Tische",tsl:"Table",ct1:0,ct2:0},
-//        {wrd:"Auto",art:"das",pll:"Autos",tsl:"Car",ct1:0,ct2:0}
+//         {wrd:"tisch",art:"der",pll:"tische",tsl:"table",ct1:0,ct2:0},
+//        {wrd:"auto",art:"das",pll:"autos",tsl:"car",ct1:0,ct2:0}
 //     ]
     
-// }
+// };

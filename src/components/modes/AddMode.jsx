@@ -23,7 +23,7 @@ function AddMode() {
             alert('This word already exists, please add other word');
             setArticle(''); setNoun(''); setPlural(''); setTranslation('');
         } else {
-            addWordDE('pieter', {wrd: noun.toLowerCase(), art: article.toLowerCase(), pll: plural.toLowerCase(), ct1: 0, ct2: 0});
+            addWordDE('pieter', {wrd: noun.toLowerCase(), art: article.toLowerCase(), pll: plural.toLowerCase(), tsl: translation.toLowerCase(), ct1: 0, ct2: 0});
             setMessage(`${noun} was correctly added! You saved ${wordsDE.pieter.length} words`);
             setArticle(''); setNoun(''); setPlural(''); setTranslation('');
         }
