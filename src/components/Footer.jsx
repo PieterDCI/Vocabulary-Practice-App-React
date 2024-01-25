@@ -8,7 +8,7 @@ const aStyle = {
 function Footer() {
     return (
         <footer style={{display: 'flex', justifyContent: 'space-between', fontSize: '1.2rem'}}>
-            <p><i class="icon-code"></i> Link to Code</p>
+            <p><i className="icon-code"></i> Link to Code</p>
             <p>All rights reserved 2024</p>
             <nav >
                 <ul style={{display: 'flex', textDecoration: 'none', color: 'white'}}>

@@ -1,12 +1,13 @@
 .main-tile {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 2rem;
-    background-color: orange;
     height: 25px;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
+    min-width: 200px;
 }
 
 .tiles {
@@ -19,5 +20,6 @@
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+    width: 50px;
     cursor: pointer;
 }

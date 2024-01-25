@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {addWordDE, wordsDE} from "../../localStorageDE"
+import { addWordDE, wordsDE } from "../../localStorageDE"
 
 import "../../styling/inputs.css";
 import "../../styling/buttons.css";

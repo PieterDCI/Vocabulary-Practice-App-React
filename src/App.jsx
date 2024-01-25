@@ -16,7 +16,12 @@ function App() {
   useEffect(() => {
     getData();
     return saveData();
-  })
+  }, []);
+
+  useEffect(() => {
+    saveData()
+  }, [mode]);
+
 
   return (
      <div className='App'>
