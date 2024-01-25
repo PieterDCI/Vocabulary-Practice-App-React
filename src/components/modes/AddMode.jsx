@@ -1,9 +1,12 @@
 import { useState } from "react";
+import {addWordDE, wordsDE} from "../../localStorageDE"
+
 import "../../styling/inputs.css";
 import "../../styling/buttons.css";
 
 function AddMode() {
 
+    const [message, setMessage] = useState('');
     const [noun, setNoun] = useState('');
     const [article, setArticle] = useState('');
     const [plural, setPlural] = useState('');
@@ -15,7 +18,15 @@ function AddMode() {
     const changePlural = (e) => setPlural(e.target.value);
 
     const addWordToStorage = () => {
-        return (null)
+        if (wordsDE.pieter.find(x => x.wrd === noun.toLowerCase())) {
+            setMessage('');
+            alert('This word already exists, please add other word');
+            setArticle(''); setNoun(''); setPlural(''); setTranslation('');
+        } else {
+            addWordDE('pieter', {wrd: noun.toLowerCase(), art: article.toLowerCase(), pll: plural.toLowerCase(), ct1: 0, ct2: 0});
+            setMessage(`${noun} was correctly added! You saved ${wordsDE.pieter.length} words`);
+            setArticle(''); setNoun(''); setPlural(''); setTranslation('');
+        }
     }
 
     return(
@@ -26,6 +37,7 @@ function AddMode() {
                 <input type="text" placeholder="Enter Plural" value={plural} onChange={changePlural} />
                 <input type="text" placeholder="Enter Translation" value={translation} onChange={changeTranslation} />
                 <button onClick={addWordToStorage} style={{marginTop: '15px'}}><i className="icon-plus"></i></button>
+                <p style={{color: "green", marginTop: '10px', fontSize: '1.6rem'}}>{message}</p>
             </div>
        </main>
     )
