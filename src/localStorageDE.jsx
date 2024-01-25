@@ -5,7 +5,6 @@ function addWordDE (user, wordObj) {wordsDE[user].push(wordObj)};
 function getData() {wordsDE = JSON.parse(localStorage.getItem('wordsObj')) || {}};
 function saveData() {localStorage.setItem('wordsObj', JSON.stringify(wordsDE))};
 
-
 export {addWordDE, wordsDE, getData, saveData};
 
 

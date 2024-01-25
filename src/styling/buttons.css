@@ -5,9 +5,28 @@ button {
     padding: 0.5em 2.5vw;
     border-radius: 1.2em;
     box-shadow: 3px 3px 10px var(--clr-light2);
-    transition: all 0.3s;
-    margin-left: 2vw;
     cursor: pointer;
     color: var(--clr-light2); 
     text-decoration: none;
+}
+
+.addBtn {
+    margin-top: 10px;
+}
+
+.menuBtn {
+    margin-left: 2rem;
+}
+
+.loginBtn {
+    width: 100px;
+    text-align: center;
+}
+
+.checkBtn {
+    margin-top: 20px;
+}
+
+.nextBtn {
+    margin-top: 5px;
 }

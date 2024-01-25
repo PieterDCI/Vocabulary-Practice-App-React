@@ -2,7 +2,6 @@ import { useState } from "react";
 import { addWordDE, wordsDE } from "../../localStorageDE"
 
 import "../../styling/inputs.css";
-import "../../styling/buttons.css";
 
 function AddMode() {
 
@@ -35,8 +34,8 @@ function AddMode() {
                 <input type="text" placeholder="Enter Noun" value={noun} onChange={changeNoun}/>
                 <input type="text" placeholder="Enter Article" value={article} onChange={changeArticle} />
                 <input type="text" placeholder="Enter Plural" value={plural} onChange={changePlural} />
-                <input type="text" placeholder="Enter Translation" value={translation} onChange={changeTranslation} />
-                <button onClick={addWordToStorage} style={{marginTop: '15px'}}><i className="icon-plus"></i></button>
+                <input type="text" placeholder="Enter Translation EN" value={translation} onChange={changeTranslation} />
+                <button onClick={addWordToStorage} className="addBtn"><i className="icon-plus"></i></button>
                 <p style={{color: "green", marginTop: '10px', fontSize: '1.6rem'}}>{message}</p>
             </div>
        </main>

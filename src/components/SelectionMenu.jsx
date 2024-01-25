@@ -17,10 +17,10 @@ function SelectionMenu({ setMode }) {
     
     return(
         <nav style={menuStyle} className="modeSelector">
-            <button onClick={changeMode} value={'add'}><i className="icon-plus"></i> Add words</button>
-            <button onClick={changeMode} value={'pract'}><i className="icon-th-large"></i> Practice</button>
-            <button onClick={changeMode} value={'transl'}><i className="icon-repeat"></i> Translate</button>
-            <button onClick={changeMode} value={'rtransl'}><i className="icon-undo"></i> Reverse</button>
+            <button className="menuBtn" onClick={changeMode} value={'add'}><i className="icon-plus"></i> Addition</button>
+            <button className="menuBtn" onClick={changeMode} value={'pract'}><i className="icon-th-large"></i> Practice</button>
+            <button className="menuBtn" onClick={changeMode} value={'transl'}><i className="icon-repeat"></i> Translate</button>
+            <button className="menuBtn" onClick={changeMode} value={'rtransl'}><i className="icon-undo"></i> Reverse</button>
         </nav>
     )
 }

@@ -34,10 +34,10 @@ function ReverseTrnslMode() {
 
     const check = () => {
         setBackgroundColor(
-            article === articleRef.current && 
-            plural === pluralRef.current && 
-            noun === nounRef.current ? 'green' : 'red');
-        setArticle(''); setPlural(''); setTranslation('');
+            article.toLowerCase() === articleRef.current && 
+            plural.toLowerCase() === pluralRef.current && 
+            noun.toLowerCase() === nounRef.current ? 'green' : 'red');
+        setArticle(''); setPlural(''); setNoun('');
     }
 
 
@@ -45,7 +45,7 @@ function ReverseTrnslMode() {
         return (
             <main>
                 <div className="wrapper">
-                    <button onClick={getWord}>Start Practice</button>
+                    <button onClick={getWord}>Practice <i className="icon-undo"></i></button>
                 </div>
             </main>
         )
@@ -55,12 +55,12 @@ function ReverseTrnslMode() {
                 <div className="wrapper">
                     <div className="main-tile" style={{backgroundColor: backgroundColor}}><p>{wordToPractice}</p></div>
                     <div className="tiles" style={{flexDirection: 'column'}}>
-                        <input type="text" placeholder="article" value={article} onChange={changeArticle} />
-                        <input type="text" placeholder="singular" value={noun} onChange={changeNoun}/>
-                        <input type="text" placeholder="plural" value={plural} onChange={changePlural} />
+                        <input type="text" placeholder="Enter article DE" value={article} onChange={changeArticle}/>
+                        <input type="text" placeholder="Enter singular DE" value={noun} onChange={changeNoun}/>
+                        <input type="text" placeholder="Enter plural DE" value={plural} onChange={changePlural} />
                     </div>
-                    <button onClick={check}>Check</button>
-                    <button onClick={getWord}>Next word</button>
+                    <button className="checkBtn" onClick={check}>Check</button>
+                    <button className="nextBtn" onClick={getWord}>Next word</button>
                 </div>
            </main>
         )

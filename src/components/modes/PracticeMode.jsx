@@ -23,14 +23,15 @@ function PracticeMode() {
         setBackgroundColor(e.target.value === articleRef.current? 'green' : 'red');
         wordsDE.pieter[arrayRef.current].ct1 += 1;
         wordsDE.pieter[arrayRef.current].ct2 += e.target.value === articleRef.current? 1 : 0;
-        console.log(wordsDE.pieter[arrayRef.current]);
     }
+
+    
 
     if (wordToPractice === '') {
         return (
             <main>
                 <div className="wrapper">
-                    <button onClick={getWord}>Start Article Practice </button>
+                    <button onClick={getWord}>Practice <i className="icon-th-large"></i> </button>
                 </div>
             </main>
         )

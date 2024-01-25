@@ -42,7 +42,7 @@ function TranslateMode() {
         return (
             <main>
                 <div className="wrapper">
-                    <button onClick={getWord}>Start Practice</button>
+                    <button onClick={getWord}>Practice <i className="icon-repeat"></i></button>
                 </div>
             </main>
         )
@@ -52,12 +52,12 @@ function TranslateMode() {
                 <div className="wrapper">
                     <div className="main-tile" style={{backgroundColor: backgroundColor}}><p>{wordToPractice}</p></div>
                     <div className="tiles" style={{flexDirection: 'column'}}>
-                        <input type="text" placeholder="article" value={article} onChange={changeArticle} />
-                        <input type="text" placeholder="plural" value={plural} onChange={changePlural}/>
-                        <input type="text" placeholder="translation" value={translation} onChange={changeTranslation} />
+                        <input type="text" placeholder="Enter article DE" value={article} onChange={changeArticle} />
+                        <input type="text" placeholder="Enter plural DE" value={plural} onChange={changePlural}/>
+                        <input type="text" placeholder="Enter translation EN" value={translation} onChange={changeTranslation} />
                     </div>
-                    <button onClick={check}>Check</button>
-                    <button onClick={getWord}>Next word</button>
+                    <button className="checkBtn" onClick={check}>Check</button>
+                    <button className="nextBtn" onClick={getWord}>Next word</button>
                 </div>
            </main>
         )
