@@ -25,8 +25,6 @@ function PracticeMode() {
         wordsDE.pieter[arrayRef.current].ct2 += e.target.value === articleRef.current? 1 : 0;
     }
 
-    
-
     if (wordToPractice === '') {
         return (
             <main>

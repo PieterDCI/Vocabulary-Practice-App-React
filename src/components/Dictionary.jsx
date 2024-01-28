@@ -15,8 +15,8 @@ function Dictionary() {
         <div className="mailer">
             <form>
                <input type="text" id="mailer" value={searchWord} onChange={updateSearchWord} required />
-               <label for="mailer">Look up word...</label>
-               <button className="sendBtn" name="submit"><i class="icon-arrow-right"></i></button>
+               <label htmlFor="mailer">Look up word...</label>
+               <button className="sendBtn" name="submit"><i className="icon-arrow-right"></i></button>
             </form>
         </div>
     )

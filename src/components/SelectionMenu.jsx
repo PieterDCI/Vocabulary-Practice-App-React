@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+import UserModeContext from './contexts/UserModeContext';
+
 import "../styling/buttons.css"
 
 const menuStyle = {
@@ -9,7 +12,9 @@ const menuStyle = {
     padding: '10px'
 }
 
-function SelectionMenu({ setMode }) {
+function SelectionMenu() {
+
+    const {setMode} = useContext(UserModeContext)
 
     function changeMode(e) {
         setMode(e.target.value)

@@ -2,4 +2,4 @@ import { createContext } from 'react';
 
 const StorageContext = createContext(null);
 
-export default StorageContextContext;
+export default StorageContext;
