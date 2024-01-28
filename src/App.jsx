@@ -10,8 +10,7 @@ import Main from './components/Main'
 import SelectionMenu from './components/SelectionMenu'
 import Dictionary from './components/Dictionary'
 
-import { getData, saveData, wordsDE } from './localStorageDE'
-
+import { getData, saveData } from './localStorageDE'
 import './App.css'
 
 
@@ -20,11 +19,11 @@ function App() {
   const [user, setUser] = useState('')
 
   useEffect(() => {getData(); return saveData();}, []);
-  useEffect(() => {saveData()}, [mode]);
+  // get data on start and always save when unmounted
 
   return (
      <div className='App'>
-      <StorageContext.Provider value={{wordsDE, saveData}}>
+      <StorageContext.Provider value={{saveData}}> 
         <UserModeContext.Provider value={{user, mode, setUser, setMode}}>
           <Header />
           <SelectionMenu />

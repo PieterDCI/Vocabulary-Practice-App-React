@@ -1,7 +1,9 @@
 import { useContext } from 'react';
 import UserModeContext from './contexts/UserModeContext';
+import StorageContext from './contexts/StorageContext';
 
 import "../styling/buttons.css"
+
 
 const menuStyle = {
     height: '150px',
@@ -14,9 +16,11 @@ const menuStyle = {
 
 function SelectionMenu() {
 
-    const {setMode} = useContext(UserModeContext)
+    const {setMode} = useContext(UserModeContext);
+    const {saveData} = useContext(StorageContext);
 
     function changeMode(e) {
+        saveData();
         setMode(e.target.value)
     }
     

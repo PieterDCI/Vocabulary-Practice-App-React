@@ -48,3 +48,9 @@ input#mailer:focus +label {
 input#mailer:focus {border: 1px solid var(--clr-light2);}
 input#mailer:valid {border-color: lime; color: lime; } 
 input#mailer:valid +label {display: none;}
+
+.results {
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
