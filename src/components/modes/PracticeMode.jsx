@@ -16,7 +16,7 @@ function PracticeMode() {
         arrayRef.current = Number(Math.floor(Math.random() * length));
         const newWord = wordsDE.pieter[arrayRef.current].wrd;
         articleRef.current = wordsDE.pieter[arrayRef.current].art;
-        setWordToPractice(newWord)
+        setWordToPractice(newWord.charAt(0).toUpperCase() + newWord.slice(1))
     }
 
     const checkArticle = (e) => {

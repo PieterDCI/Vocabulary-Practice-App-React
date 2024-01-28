@@ -1,0 +1,50 @@
+.mailer {
+    display: flex;
+    height: 60px;
+    min-height: 60px;
+    width: 100vw;
+    justify-content: left;
+    background-color: var(--clr-dark1-tr); 
+}
+
+form { 
+    margin-left: 5px;
+    height: 35px; 
+    position: relative;
+}
+
+#mailer {
+    height: 100%; 
+    width: 250px; 
+    border-radius: 1.2em; 
+    background-color: transparent;
+    font-size: 1.6rem;
+    outline: none;
+    padding-left: 1em;
+    color: var(--clr-light2);
+    border: 1px solid var(--clr-light1);
+    transition: all 0.3s;
+}
+
+
+label {
+    color: var(--clr-light1);
+    position: absolute;
+    left: 1.2em;
+    top: 1.8em;
+    font-size: 1.4rem;
+    cursor: text;
+    transition: all 0.3s;
+}
+    
+
+input#mailer:focus +label {
+    transform: translateY(-1.5em) scale(0.9); 
+    color: var(--clr-light2);
+    background-color: var(--clr-dark2);
+    padding: 0em 0.3em;
+    border-left: 1px solid var(--clr-light2);
+    border-right: 1px solid var(--clr-light2);}
+input#mailer:focus {border: 1px solid var(--clr-light2);}
+input#mailer:valid {border-color: lime; color: lime; } 
+input#mailer:valid +label {display: none;}

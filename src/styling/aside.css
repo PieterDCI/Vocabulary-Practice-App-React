@@ -1,5 +1,6 @@
 .nav-social {
     position: absolute; 
     top: 23em;
-    .sociallogo {transition: 0.3s; a {font-size: 3em; color: white; text-decoration: none;}}
-    .sociallogo:hover {transform: scale(1.2) translateX(5px);}}
+    .sociallogo {transition: 0.3s; a {font-size: 3em; color: var(--clr-light2); text-decoration: none;}}
+    .sociallogo:hover {transform: scale(1.2) translateX(5px);}
+}

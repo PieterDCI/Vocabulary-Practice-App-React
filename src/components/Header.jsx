@@ -4,7 +4,6 @@ function Header(){
     return (
         <header>
             <div className="brand">Artikelz practice app</div>
-            <p>Choose language</p>
             <button className="loginBtn">Login</button>
         </header>
     )

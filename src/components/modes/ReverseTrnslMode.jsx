@@ -29,7 +29,7 @@ function ReverseTrnslMode() {
         articleRef.current = wordsDE.pieter[arrayRef.current].art;
         pluralRef.current = wordsDE.pieter[arrayRef.current].pll;
         nounRef.current = wordsDE.pieter[arrayRef.current].wrd;
-        setWordToPractice(newWord)
+        setWordToPractice(newWord.charAt(0).toUpperCase() + newWord.slice(1))
     }
 
     const check = () => {

@@ -5,6 +5,7 @@ import Aside from './components/Aside'
 import Footer from './components/Footer'
 import Main from './components/Main'
 import SelectionMenu from './components/SelectionMenu'
+import Dictionary from './components/Dictionary'
 
 import { getData, saveData } from './localStorageDE'
 
@@ -29,6 +30,7 @@ function App() {
       <SelectionMenu setMode={setMode} />
       <Main mode={mode} />
       <Aside />
+      <Dictionary />
       <Footer />
      </div>
   )

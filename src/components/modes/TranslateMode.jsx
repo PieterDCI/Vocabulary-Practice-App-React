@@ -29,11 +29,11 @@ function TranslateMode() {
         articleRef.current = wordsDE.pieter[arrayRef.current].art;
         pluralRef.current = wordsDE.pieter[arrayRef.current].pll;
         translationRef.current = wordsDE.pieter[arrayRef.current].tsl;
-        setWordToPractice(newWord)
+        setWordToPractice(newWord.charAt(0).toUpperCase() + newWord.slice(1))
     }
 
     const check = () => {
-        setBackgroundColor(article === articleRef.current && plural === pluralRef.current && translation === translationRef.current ? 'green' : 'red');
+        setBackgroundColor(article.toLowerCase() === articleRef.current && plural.toLowerCase() === pluralRef.current && translation.toLowerCase() === translationRef.current ? 'green' : 'red');
         setArticle(''); setPlural(''); setTranslation('');
     }
 

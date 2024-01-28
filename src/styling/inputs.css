@@ -3,7 +3,7 @@ input {
     width: 300px;
     padding: 0.5em 2.5vw;
     border-radius: 1.2em;
-    background-color: white;
+    background-color: var(--clr-light2);
     color: #27374d;
     border: none;
     margin-top: 15px;
