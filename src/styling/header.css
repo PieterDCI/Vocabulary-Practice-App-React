@@ -19,3 +19,9 @@ header {
     flex-shrink: 0;
     font-family: monospace;
 }
+
+.userInput {
+  background-color: var(--clr-light2);
+  width: 180px;
+  margin: 5px;
+}

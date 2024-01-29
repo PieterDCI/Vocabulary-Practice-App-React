@@ -1,8 +1,22 @@
-# React + Vite
+# Vocabulary practice app (EN - DE)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the app
 
-Currently, two official plugins are available:
+This app lets users create their own pool of words they would like to practice. 
+Statistics are kept about the practice rounds and also the success rate.
+(For now) the data is kept between sessions by means of local storage in the browser.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Features currently in development for version 1
+
+- Fully implement the user login functionality
+- Implement missing user-based functions such as statistics
+- Add more/better visual indications of the current language.
+
+## Future features for version 2
+
+- Add new functionality for practicing verbs and other language(s) through routing.
+- (internal) add useReducer to main app.
+- Add light/dark theme through context provider.
+
+
