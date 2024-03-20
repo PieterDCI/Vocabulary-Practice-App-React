@@ -1,21 +1,25 @@
 
 let wordsDE;
 
-function addWordDE (user, wordObj) {wordsDE[user].push(wordObj)};
-function getData() {wordsDE = JSON.parse(localStorage.getItem('wordsObj')) || {}};
-function saveData() {localStorage.setItem('wordsObj', JSON.stringify(wordsDE))};
+/** Takes a (username, not ready yet) and a new word as arguments. Adds the word to the user-linked saved words*/
+
+// function addWordDE (user, newWordObj) {
+function addWordDE (newWordObj) {
+    // wordsDE[user].push(newWordObj)
+    wordsDE.defaultUser.push(newWordObj)
+};
+
+/** This sets wordsDE variable to localStorage data if there is any, otherwise starter object */
+function getData() {
+    wordsDE = JSON.parse(localStorage.getItem('wordsObj')) || {defaultUser: []}
+};
+
+/** This saves the current wordsDE(object) data into the localstorage as 'wordsObj' */
+function saveData() {
+    localStorage.setItem('wordsObj', JSON.stringify(wordsDE))
+};
+
 
 export {addWordDE, wordsDE, getData, saveData};
 
 
-// {
-//     users: {pieter: "admin", johndoe: "pass1"},
-//     pieter: [
-//     {wrd:"tisch",art:"der",pll:"tische",tsl:"table",ct1:0,ct2:0},
-//     ],
-//     johndoe: [
-//         {wrd:"tisch",art:"der",pll:"tische",tsl:"table",ct1:0,ct2:0},
-//        {wrd:"auto",art:"das",pll:"autos",tsl:"car",ct1:0,ct2:0}
-//     ]
-    
-// };

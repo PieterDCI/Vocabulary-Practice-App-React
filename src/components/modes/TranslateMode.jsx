@@ -23,12 +23,12 @@ function TranslateMode() {
 
     const getWord = () => {
         setBackgroundColor('orange');
-        const length = wordsDE.pieter.length;
+        const length = wordsDE.defaultUser.length;
         arrayRef.current = Number(Math.floor(Math.random() * length));
-        const newWord = wordsDE.pieter[arrayRef.current].wrd;
-        articleRef.current = wordsDE.pieter[arrayRef.current].art;
-        pluralRef.current = wordsDE.pieter[arrayRef.current].pll;
-        translationRef.current = wordsDE.pieter[arrayRef.current].tsl;
+        const newWord = wordsDE.defaultUser[arrayRef.current].wrd;
+        articleRef.current = wordsDE.defaultUser[arrayRef.current].art;
+        pluralRef.current = wordsDE.defaultUser[arrayRef.current].pll;
+        translationRef.current = wordsDE.defaultUser[arrayRef.current].tsl;
         setWordToPractice(newWord.charAt(0).toUpperCase() + newWord.slice(1))
     }
 

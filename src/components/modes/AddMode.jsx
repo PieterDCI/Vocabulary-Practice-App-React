@@ -16,14 +16,22 @@ function AddMode() {
     const changeTranslation = (e) => setTranslation(e.target.value);
     const changePlural = (e) => setPlural(e.target.value);
 
+    /** Checks if word exists, adds word if not, and sets correct message */
     const addWordToStorage = () => {
-        if (wordsDE.pieter.find(x => x.wrd === noun.toLowerCase())) {
+        if (wordsDE.defaultUser.find(x => x.wrd === noun.toLowerCase())) {
             setMessage('');
             alert('This word already exists, please add other word');
             setArticle(''); setNoun(''); setPlural(''); setTranslation('');
         } else {
-            addWordDE('pieter', {wrd: noun.toLowerCase(), art: article.toLowerCase(), pll: plural.toLowerCase(), tsl: translation.toLowerCase(), ct1: 0, ct2: 0});
-            setMessage(`${noun} was correctly added! You saved ${wordsDE.pieter.length} words`);
+            // addWordDE('john', {
+            addWordDE({
+                wrd: noun.toLowerCase(), 
+                art: article.toLowerCase(), 
+                pll: plural.toLowerCase(), 
+                tsl: translation.toLowerCase(), 
+                ct1: 0, 
+                ct2: 0});
+            setMessage(`${noun} was correctly added! You now have a total of ${wordsDE.defaultUser.length} word(s)`);
             setArticle(''); setNoun(''); setPlural(''); setTranslation('');
         }
     }

@@ -12,17 +12,17 @@ function PracticeMode() {
 
     const getWord = () => {
         setBackgroundColor('orange');
-        const length = wordsDE.pieter.length;
+        const length = wordsDE.defaultUser.length;
         arrayRef.current = Number(Math.floor(Math.random() * length));
-        const newWord = wordsDE.pieter[arrayRef.current].wrd;
-        articleRef.current = wordsDE.pieter[arrayRef.current].art;
+        const newWord = wordsDE.defaultUser[arrayRef.current].wrd;
+        articleRef.current = wordsDE.defaultUser[arrayRef.current].art;
         setWordToPractice(newWord.charAt(0).toUpperCase() + newWord.slice(1))
     }
 
     const checkArticle = (e) => {
         setBackgroundColor(e.target.value === articleRef.current? 'green' : 'red');
-        wordsDE.pieter[arrayRef.current].ct1 += 1;
-        wordsDE.pieter[arrayRef.current].ct2 += e.target.value === articleRef.current? 1 : 0;
+        wordsDE.defaultUser[arrayRef.current].ct1 += 1;
+        wordsDE.defaultUser[arrayRef.current].ct2 += e.target.value === articleRef.current? 1 : 0;
     }
 
     if (wordToPractice === '') {

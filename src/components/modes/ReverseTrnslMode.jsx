@@ -23,12 +23,12 @@ function ReverseTrnslMode() {
 
     const getWord = () => {
         setBackgroundColor('orange');
-        const length = wordsDE.pieter.length;
+        const length = wordsDE.defaultUser.length;
         arrayRef.current = Number(Math.floor(Math.random() * length));
-        const newWord = wordsDE.pieter[arrayRef.current].tsl;
-        articleRef.current = wordsDE.pieter[arrayRef.current].art;
-        pluralRef.current = wordsDE.pieter[arrayRef.current].pll;
-        nounRef.current = wordsDE.pieter[arrayRef.current].wrd;
+        const newWord = wordsDE.defaultUser[arrayRef.current].tsl;
+        articleRef.current = wordsDE.defaultUser[arrayRef.current].art;
+        pluralRef.current = wordsDE.defaultUser[arrayRef.current].pll;
+        nounRef.current = wordsDE.defaultUser[arrayRef.current].wrd;
         setWordToPractice(newWord.charAt(0).toUpperCase() + newWord.slice(1))
     }
 
